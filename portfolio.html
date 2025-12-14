@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Niralnest Technologies</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="logo">
+                <img src="logo.svg" alt="Niralnest Technologies">
+                <div class="logo-text">
+                    <h2>Niralnest Technologies</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Title -->
+    <section class="page-title">
+        <div class="container">
+            <h2>Our Portfolio</h2>
+            <p>Showcase of our successful projects and client success stories</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Filter -->
+    <section class="portfolio-section">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" onclick="filterProjects('all')">All</button>
+                <button class="filter-btn" onclick="filterProjects('web')">Web</button>
+                <button class="filter-btn" onclick="filterProjects('mobile')">Mobile</button>
+                <button class="filter-btn" onclick="filterProjects('consulting')">Consulting</button>
+            </div>
+
+            <!-- Portfolio Grid -->
+            <div class="portfolio-grid">
+                <!-- Web Projects -->
+                <div class="portfolio-item web" data-category="web">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/300x200?text=E-Commerce+Platform" alt="E-Commerce Platform">
+                    </div>
+                    <div class="portfolio-details">
+                        <h3>E-Commerce Platform</h3>
+                        <p class="category">Web Development</p>
+                        <p>Full-featured e-commerce platform with payment integration and inventory management.</p>
+                        <a href="#" class="view-project">View Project →</a>
+                    </div>
+                </div>
+
+                <div class="portfolio-item web" data-category="web">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/300x200?text=CMS+Solution" alt="CMS Solution">
+                    </div>
+                    <div class="portfolio-details">
+                        <h3>Content Management System</h3>
+                        <p class="category">Web Development</p>
+                        <p>Custom CMS for managing digital content with role-based access control.</p>
+                        <a href="#" class="view-project">View Project →</a>
+                    </div>
+                </div>
+
+                <!-- Mobile Projects -->
+                <div class="portfolio-item mobile" data-category="mobile">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/300x200?text=Fitness+App" alt="Fitness App">
+                    </div>
+                    <div class="portfolio-details">
+                        <h3>Fitness Tracking App</h3>
+                        <p class="category">Mobile Development</p>
+                        <p>iOS and Android app for fitness tracking with real-time health monitoring.</p>
+                        <a href="#" class="view-project">View Project →</a>
+                    </div>
+                </div>
+
+                <div class="portfolio-item mobile" data-category="mobile">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/300x200?text=Finance+App" alt="Finance App">
+                    </div>
+                    <div class="portfolio-details">
+                        <h3>Personal Finance Manager</h3>
+                        <p class="category">Mobile Development</p>
+                        <p>Budget tracking and financial planning app with analytics dashboard.</p>
+                        <a href="#" class="view-project">View Project →</a>
+                    </div>
+                </div>
+
+                <!-- Consulting Projects -->
+                <div class="portfolio-item consulting" data-category="consulting">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/300x200?text=Digital+Transformation" alt="Digital Transformation">
+                    </div>
+                    <div class="portfolio-details">
+                        <h3>Digital Transformation</h3>
+                        <p class="category">Consulting</p>
+                        <p>Complete digital overhaul for Fortune 500 company, improving operations by 40%.</p>
+                        <a href="#" class="view-project">View Project →</a>
+                    </div>
+                </div>
+
+                <div class="portfolio-item web" data-category="web">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/300x200?text=Corporate+Website" alt="Corporate Website">
+                    </div>
+                    <div class="portfolio-details">
+                        <h3>Corporate Website</h3>
+                        <p class="category">Web Development</p>
+                        <p>Responsive corporate website with blog integration and SEO optimization.</p>
+                        <a href="#" class="view-project">View Project →</a>
+                    </div>
+                </div>
+
+                <div class="portfolio-item consulting" data-category="consulting">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/300x200?text=Cloud+Migration" alt="Cloud Migration">
+                    </div>
+                    <div class="portfolio-details">
+                        <h3>Cloud Infrastructure Migration</h3>
+                        <p class="category">Consulting</p>
+                        <p>Migrated enterprise infrastructure to cloud with zero downtime.</p>
+                        <a href="#" class="view-project">View Project →</a>
+                    </div>
+                </div>
+
+                <div class="portfolio-item mobile" data-category="mobile">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/300x200?text=Social+Network" alt="Social Network">
+                    </div>
+                    <div class="portfolio-details">
+                        <h3>Social Networking App</h3>
+                        <p class="category">Mobile Development</p>
+                        <p>Cross-platform app connecting millions of users with real-time messaging.</p>
+                        <a href="#" class="view-project">View Project →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <h2>Our Impact</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>50+</h3>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="stat-card">
+                    <h3>35+</h3>
+                    <p>Satisfied Clients</p>
+                </div>
+                <div class="stat-card">
+                    <h3>100+</h3>
+                    <p>Team Members</p>
+                </div>
+                <div class="stat-card">
+                    <h3>10M+</h3>
+                    <p>Users Served</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Niralnest Technologies</h4>
+                    <p>Leading IT solutions provider for modern businesses.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="service.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>Email: info@niralnest.com</p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Niralnest Technologies. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
